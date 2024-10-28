@@ -6,6 +6,7 @@
         { // Andre
             Double earthWeight, planetWeight;
             string planet;
+            int secret, guess;
 
 
 
@@ -29,12 +30,50 @@
                 planetWeight = 0.39 * earthWeight;
                 Console.WriteLine("Your weight would be: " + planetWeight);
             }
-            else if (planetWeight == "3" || planet.ToLower() == "jupiter")
+            else if (planet == "3" || planet.ToLower() == "jupiter") 
             {
+                planetWeight = 2.65 * earthWeight;
+                Console.WriteLine("Your weight would be: " + planetWeight);
+            }
+            else if (planet == "4" || planet.ToLower() == "saturn")
+            {
+                planetWeight = 1.17 * earthWeight;
+                Console.WriteLine("Your weight would be: " + planetWeight);
+            }
+            else if (planet == "5" ||  planet.ToLower() == "uranus")
+            {
+                planetWeight = 1.05 * earthWeight;
+                Console.WriteLine("Your weight would be: " + planetWeight);
+            }
+            else if (planet == "6" ||  planet.ToLower() == "neptune")
+            {
+                planetWeight = 1.23 * earthWeight;
+                Console.WriteLine("Your weight would be: " + planetWeight);
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hey man lets play a guessing game.");
+            Console.WriteLine("The number i have picked is between 1 - 10.");
+            Console.WriteLine("Good luck");
+            Console.Write("Enter your answer here: ");
+            secret = 9;
+            Int32.TryParse(Console.ReadLine(), out guess);
+            if (guess == secret)
+            {
+                Console.WriteLine("Yea man good job you got it :)");
 
             }
+            else
+            {                
+                Console.WriteLine("No you're wrong!!!");
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hey man lets do a quick quiz, if you don't mind?");
 
-            
+
         }
     }
 }
