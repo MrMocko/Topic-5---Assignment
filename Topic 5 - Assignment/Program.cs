@@ -1,12 +1,14 @@
-﻿namespace Topic_5___Assignment
+﻿using System.Diagnostics;
+
+namespace Topic_5___Assignment
 {
     internal class Program
     {
         static void Main(string[] args)
         { // Andre
             Double earthWeight, planetWeight;
-            string planet;
-            int secret, guess;
+            string planet, brock, answer, princess;
+            int secret, guess, pair;
 
 
 
@@ -72,6 +74,61 @@
             Console.ReadLine();
             Console.Clear();
             Console.WriteLine("Hey man lets do a quick quiz, if you don't mind?");
+            Console.WriteLine("");
+            Console.WriteLine("Ok man how many shoes are in 10 pairs");
+            Console.Write("Enter your answer here: ");
+            Int32.TryParse (Console.ReadLine(), out pair);
+            if (pair == 20 )
+            {
+                Console.WriteLine("Okkkkk okkkk man good work you got it right");
+            }
+            else
+            {
+                Console.WriteLine("Bro are you serious?");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Ok next question");
+            Console.WriteLine("");
+            Console.WriteLine("What is Obama's last name?");
+            brock = Console.ReadLine();
+            if (brock.ToLower() == "obama")
+            {
+                Console.WriteLine("Oh yea man good job :)");
+            }
+            else
+            {
+                Console.WriteLine("HAHA YOU ARE 100% WRONG!!!");
+            }
+            Console.WriteLine("Ok heres another question.");
+            Console.WriteLine("");
+            Console.WriteLine("Which Disney princess is known for her long, golden hair and a magical healing ability?");
+            Console.WriteLine("\tA: Jasmine");
+            Console.WriteLine("\tB: Rapenzel");
+            Console.WriteLine("\tC: Snow White");
+            Console.WriteLine("\tD: Mulan");
+            Console.Write("Enter your answer here: ");
+            answer = Console.ReadLine();
+            if (answer.ToLower() == "a" || answer.ToLower() == "jasmine")
+            {
+                Console.WriteLine("Bruh... wrong");
+            }
+            else if (answer.ToLower() == "b" || answer.ToLower() == "rapeunzel")
+            {
+                Console.WriteLine("OMG YOU GOT IT RIGHT!");
+            }
+            else if (answer.ToLower() == "c" || answer.ToLower() == "snow white")
+            {
+                Console.WriteLine("Wrong movie bucko AH AH AH ");
+            }
+            else if (answer.ToLower() == "d" || answer.ToLower() == "mulan")
+            {
+                Console.WriteLine("100% wrong on so many levels");
+            }
+            Console.WriteLine("Ok good job so far, heres the last question!!! GOOD LUCK!!!");
+
+
+
+
 
 
         }
