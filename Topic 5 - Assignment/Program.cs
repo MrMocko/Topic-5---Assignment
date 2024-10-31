@@ -6,7 +6,7 @@ namespace Topic_5___Assignment
     {
         static void Main(string[] args)
         { // Andre
-            Double earthWeight, planetWeight;
+            double earthWeight, planetWeight;
             string planet, brock, answer, princess, multChoiceAns;
             int secret, guess, pair, point =0;
 
